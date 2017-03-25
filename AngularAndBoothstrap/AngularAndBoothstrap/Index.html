@@ -6,15 +6,9 @@
     <script src="Scripts/angular.js"></script>
     <script src="AngularApp/app.module.js"></script>
     <script src="AngularApp/main.js"></script>
+    <script src="AngularApp/ComponentCreation.js"></script>
 </head>
 <body >
-    <div ng-controller="Main as vm">
-        <div id="List">
-            <input type="text" ng-model="list[0].id"/>
-            <div ng-repeat="item in list">
-                Card {{item.id}}
-            </div>
-        </div>
-    </div>
+   <card-List></card-List>
 </body>
 </html>
