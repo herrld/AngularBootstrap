@@ -1,9 +1,12 @@
 ﻿<div ng-controller="Main as vm">
     <div id="List">
-        <input type="text" ng-model="list[0].id" />
-        <div ng-repeat="item in list">
+        <input type="text" ng-model="vm.list[0].id" />
+        <div ng-repeat="item in vm.list">
             Card {{item.id}}
         </div>
     </div>
-    <input type="button" ng-click="vm.open()" value="Modal" />
+    <div class="btn-group">
+        <input type="button" class="btn btn-primary" ng-click="vm.open()" value="Modal" />
+        <input type="button" class="btn btn-primary" ng-click="vm.Alert()" value="Add Alert" />
+    </div>
 </div>
