@@ -4,18 +4,28 @@
     <title></title>
 	<meta charset="utf-8" />
     <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/angular-animate.js"></script>
     <script src="Scripts/angular-touch.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
     
+    <!--application componenents-->
 
     <script src="AngularApp/app.module.js"></script>
     <script src="AngularApp/main.js"></script>
-    <script src="AngularApp/ComponentCreation.js"></script>
+    <script src="AngularApp/Controllers/cardListController.js"></script>
     <script src="AngularApp/Controllers/Modals/ModalInstance.js"></script>
+    <script src="AngularApp/Controllers/CardDetail.js"></script>
 
+
+    <!--builds from components-->
+   
+    <script src="AngularApp/ComponentCreation.js"></script>
+    <script src="AngularApp/AppConfig.js"></script>
     <link rel="stylesheet" type="text/css" href="Content/ui-bootstrap-csp.css" />
+
+    <!--<base href="#/cards" />-->
     <link href="Content/bootstrap.css" rel="stylesheet">
 </head>
 <body class="container-fluid" >
@@ -26,7 +36,7 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <card-List></card-List>
+            <div ng-view></div>
         </div>
     </div>
    

@@ -1,8 +1,8 @@
-﻿<div ng-controller="Main as vm">
+﻿<div>
     <div id="List">
         <input type="text" ng-model="vm.list[0].id" />
         <div ng-repeat="item in vm.list">
-            Card {{item.id}}
+            <a href="#!/cards/{{item.id}}/" class="thumb"> Card {{item.id}}</a>
         </div>
     </div>
     <div class="btn-group">

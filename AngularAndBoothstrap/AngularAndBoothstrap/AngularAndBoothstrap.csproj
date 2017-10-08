@@ -66,10 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularApp\AppConfig.js" />
     <Content Include="AngularApp\ComponentCreation.js" />
+    <Content Include="AngularApp\Controllers\CardDetail.js" />
     <Content Include="AngularApp\Controllers\Modals\ModalInstance.js" />
     <Content Include="AngularApp\Controllers\TestModal.js" />
     <Content Include="AngularApp\Views\CardListView.html" />
+    <Content Include="AngularApp\Views\CardView.html" />
     <Content Include="AngularApp\Views\Modal\TestBSModal.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -875,7 +878,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AngularApp\app.module.js" />
-    <Content Include="AngularApp\Controllers\ListController.js" />
+    <Content Include="AngularApp\Controllers\cardListController.js" />
     <Content Include="AngularApp\main.js" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />

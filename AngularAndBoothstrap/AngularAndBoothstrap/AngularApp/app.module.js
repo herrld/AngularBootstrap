@@ -1,4 +1,4 @@
 ﻿(function () {
     'use strict';
-    angular.module('cardApp', ['ui.bootstrap']);
+    angular.module('cardApp', ['ngRoute','ui.bootstrap']);
 })();
